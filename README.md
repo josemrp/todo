@@ -6,7 +6,7 @@
 - [x] Dockerize
 - [x] Add express
 - [x] Add mongo
-- [ ] Add react
+- [x] Add react
 - [ ] Users module
     - [x] Create user
     - [ ] Edit profile
@@ -17,6 +17,7 @@
     - [x] List user tasks
     - [x] Edit task
     - [x] Close task
+- [ ] Create interfaces
 - [ ] Share
 - [ ] Add security
 
