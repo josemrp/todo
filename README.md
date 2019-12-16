@@ -6,9 +6,9 @@
 - [x] Add mongo
 - [ ] Add react
 - [ ] Users module
-    - [ ] Create user
+    - [x] Create user
     - [ ] Edit profile
-    - [ ] Log in/out
+    - [x] Log in/out
     - [ ] Delete account
 - [ ] Task module
     - [ ] Create task
