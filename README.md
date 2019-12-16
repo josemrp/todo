@@ -1,5 +1,7 @@
 # Todo app
 
+## todo for Todo
+
 - [x] Create repository
 - [x] Dockerize
 - [x] Add express
@@ -10,11 +12,11 @@
     - [ ] Edit profile
     - [x] Log in/out
     - [ ] Delete account
-- [ ] Task module
-    - [ ] Create task
-    - [ ] List user tasks
-    - [ ] Edit task
-    - [ ] Close task
+- [x] Task module
+    - [x] Create task
+    - [x] List user tasks
+    - [x] Edit task
+    - [x] Close task
 - [ ] Share
 
 
