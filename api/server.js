@@ -10,7 +10,7 @@ app.use(express.json());
 
 mongoose
 	.connect(
-		'mongodb://mongo:27017/app',
+		'mongodb://mongo:27017/api',
 		{ useNewUrlParser: true, useCreateIndex: true }
 	)
 	.then(() => console.log('MongoDB Connected'))

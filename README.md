@@ -18,6 +18,7 @@
     - [x] Edit task
     - [x] Close task
 - [ ] Share
+- [ ] Add security
 
 
 ## Run the app with
