@@ -1,29 +1,15 @@
 # Todo app
 
-## todo for Todo
-
-- [x] Create repository
-- [x] Dockerize
-- [x] Add express
-- [x] Add mongo
-- [ ] Add react
-- [ ] Users module
-    - [x] Create user
-    - [ ] Edit profile
-    - [x] Log in/out
-    - [ ] Delete account
-- [x] Task module
-    - [x] Create task
-    - [x] List user tasks
-    - [x] Edit task
-    - [x] Close task
-- [ ] Share
-- [ ] Add security
-
+You will need [docker](https://www.docker.com/)
 
 ## Run the app with
-```
+```sh
+git clone https://github.com/josemrp-copy/todo.git
+cd todo
 docker-compose up
+```
 
+## Stoop the app
+```sh
 docker-compose down
 ```
