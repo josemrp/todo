@@ -9,7 +9,7 @@ cd todo
 docker-compose up
 ```
 
-## Stoop the app
+## Stop the app
 ```sh
 docker-compose down
 ```
