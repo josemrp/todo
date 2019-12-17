@@ -1,6 +1,7 @@
 const express = require('express');
 const mongoose = require('mongoose');
 const cors = require('cors');
+const path = require('path');
 
 const app = express();
 const port = 3000;
@@ -20,12 +21,12 @@ const User = require('./models/User');
 const Task = require('./models/Task');
 
 app.get('/', (req, res) => {
-	res.send("Hello World");
+	res.sendFile(path.join(__dirname+'/index.html'));
 });
 app.post('/register', (req, res) => {
 	const newUser = new User({...req.body});
 	newUser.save()
-		.then(user => res.json({msg: "Usuario registrado"}))
+		.then(user => res.json(user))
 		.catch(error => res.status(400).json({error, msg: "Usuario no registrado"}));
 });
 app.post('/login', (req, res) => {
@@ -39,8 +40,8 @@ app.post('/task/add', (req, res) => {
 		.then(user => res.json({msg: "Tarea Creada"}))
 		.catch(error => res.status(400).json({error, msg: "Tarea no creada"}));
 });
-app.get('/task/list/', (req, res) => {
-	Task.find({userId: req.body.userId, isClosed: false})
+app.get('/task/list/:userId', (req, res) => {
+	Task.find({userId: req.params.userId, isClosed: false})
 		.then(tasks => res.json(tasks))
 		.catch(error => res.status(400).json({error, msg: "No se encontraron tareas"}))
 });
