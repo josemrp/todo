@@ -1,25 +1,15 @@
 {
   "name": "todo",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Todo app with docker",
   "main": "server.js",
   "scripts": {
     "start": "node server",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/josemrp-copy/todo.git"
-  },
-  "author": "Jose Manuel Romero",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/josemrp-copy/todo/issues"
-  },
-  "homepage": "https://github.com/josemrp-copy/todo#readme",
   "dependencies": {
     "cors": "^2.8.5",
     "express": "^4.17.1",
-    "mongoose": "^5.8.1"
+    "mongoose": "^5.12.5"
   }
 }
