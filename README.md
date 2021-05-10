@@ -1,15 +1,32 @@
-# Todo app
+# Todo
 
-You will need [docker](https://www.docker.com/)
+Simple todo app
 
-## Run the app with
+## Run the app with docker
 ```sh
-git clone https://github.com/josemrp-copy/todo.git
-cd todo
 docker-compose up
 ```
 
-## Stop the app
+## API
+
+
+
+## Mongo
+
+Show users and tasks collections with mongo
+
 ```sh
-docker-compose down
+docker-compose exec mongo mongo
+use mongo
+
+# Show all users
+db.users.find()
+
+# Show all tasks
+db.tasks.find()
+
+# Show all tokens
+db.refreshtokens.find()
 ```
+
+
